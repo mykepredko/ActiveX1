@@ -1,10 +1,13 @@
-// ActiveX1 - Call a Scratch Program
+//  ActiveX1 - Call a Scratch Program
+//
+//  myke.predko@mimetics.ca
+
 
     syscall(exec, "Active01.s");
     if ("NO" == syscall(messageboxyesno, "Did Active 01 Work Correctly?")) {
 //                                        1234567890123456789012345678901234567890
-        syscall(done, "");
     }
-
-    syscall(messageboxok, "Calling Scratch Worked Correctly");
-//                         1234567890123456789012345678901234567890
+    else {
+        syscall(messageboxok, "Calling Scratch Worked Correctly");
+//                             1234567890123456789012345678901234567890
+    }
